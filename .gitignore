@@ -173,3 +173,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 ._monitor.py
+.lgd-nfy0
+temp.csv
