@@ -9,7 +9,7 @@ x = []
 y = []
 
 def write_temp(temp):
-    with open("/home/abhishek/shareDrive/PiMonitor/cpu_temp.csv", "a") as log:
+    with open("/home/abhishek/shareDrive/PiMonitor/temp.csv", "a") as log:
         log.write("{0},{1}\n".format(strftime("%Y-%m-%d %H:%M:%S"),str(temp)))
 
 def graph(temp):
@@ -25,3 +25,4 @@ while True:
     write_temp(temp)
 #    graph(temp)
     plt.pause(1)
+    sleep(300)
